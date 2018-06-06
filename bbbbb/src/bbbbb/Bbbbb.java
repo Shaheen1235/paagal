@@ -1,21 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package bbbbb;
+
+package tw2;
 
 /**
  *
  * @author User
  */
-public class Bbbbb {
+public class Bank {
+     float balance;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    Bank(float amount) {
+        balance = amount;
     }
-    
+
+    void deposit(float amount) {
+        balance += amount;
+    }
+
+    void withdraw(float amount) {
+        if (amount < 500) {
+            System.out.println("Insufficient bal");
+        } else {
+            balance -= amount;
+        }
+    }
+
+    void display() {
+        System.out.println("Balance is:" + balance);
+    }
 }
