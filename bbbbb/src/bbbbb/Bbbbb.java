@@ -1,11 +1,11 @@
 
-package tw2;
+package Bbbbb;
 
 /**
  *
  * @author User
  */
-public class Bank {
+public class Bbbbb {
      float balance;
 
     Bank(float amount) {
